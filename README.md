@@ -134,10 +134,10 @@ Frontend Application
 
 | Layer | Technology |
 |------|-----------|
-| Frontend | HTML, CSS, JavaScript |
-| Backend | Python |
-| AI | Anthropic Claude |
-| Database | Supabase |
+| Frontend | React, HTML, CSS, JavaScript |
+| Backend | Python (FastAPI)|
+| AI | Anthropic Claude API|
+| Database | Supabase (PostgreSQL)|
 | Parsing | PDF.js, Mammoth.js |
 | Visualization | Chart.js |
 
