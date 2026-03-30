@@ -7,8 +7,9 @@ This repository represents DuelyDo’s system design, features, and architecture
 The full production system — including backend services and proprietary processing logic — is maintained in a private repository for security, scalability, and deployment.
 
 
-![DuelyDo Banner](images/banner.png)
-
+<p align="center">
+  <img src="DuelyDo_Banner.png" alt="DuelyDo Banner" width="800">
+</p>
 ---
 
 ## Overview
@@ -146,7 +147,7 @@ Frontend Application
 
 | Dashboard | Calendar | Analytics |
 |----------|----------|-----------|
-| ![Dashboard](images/screenshot-dashboard.png) | ![Calendar](images/screenshot-calendar.png) | ![Stats](images/screenshot-stats.png) |
+| ![Dashboard](Dashboard.png) | ![Calendar](Calendar.png) | ![Stats](Analytics.png) |
 
 ---
 
