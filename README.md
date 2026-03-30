@@ -67,8 +67,7 @@ Builds:
 A conversational interface that:
 - uses real academic context  
 - generates plans based on deadlines  
-- assists with prioritization
-- personal assist implemented for students  
+- assists with prioritization  
 
 ---
 
@@ -97,6 +96,8 @@ Parsing Layer (PDF.js / Mammoth.js)
 ↓  
 Preprocessing (Normalization)  
 ↓  
+Backend Processing Layer (Python)  
+↓  
 AI Processing (Claude API)  
 ↓  
 Task Structuring Engine  
@@ -110,18 +111,19 @@ Frontend Application
 ## Engineering Challenges
 
 - Handling inconsistent academic formats  
-- Interpreting ambiguous time expressions  
+- Interpreting ambiguous time expressions (e.g., "Week 5", "next Friday")  
 - Managing incomplete or missing deadline data  
 - Designing a normalized schema from unstructured input  
-- Maintaining UI responsiveness during async processing  
+- Integrating AI processing within a Python backend pipeline  
+- Maintaining UI responsiveness during asynchronous processing  
 
 ---
 
 ## Performance
 
 - Near real-time processing of multi-page documents  
-- Supportsall files including PDF, DOCX, image, and text inputs  
-- Extracts dozens of tasks per document in seconds 
+- Supports PDF, DOCX, image, and text inputs  
+- Extracts dozens of tasks per document  
 - Optimized for fast UI updates  
 
 ---
@@ -131,8 +133,9 @@ Frontend Application
 | Layer | Technology |
 |------|-----------|
 | Frontend | HTML, CSS, JavaScript |
+| Backend | Python |
 | AI | Anthropic Claude |
-| Backend | Supabase |
+| Database | Supabase |
 | Parsing | PDF.js, Mammoth.js |
 | Visualization | Chart.js |
 
