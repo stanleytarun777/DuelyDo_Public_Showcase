@@ -10,7 +10,7 @@ The full production system — including backend services and proprietary proces
 <p align="center">
   <img src="DuelyDo_Banner.png" alt="DuelyDo Banner" width="800">
 </p>
----
+
 
 ## Overview
 
