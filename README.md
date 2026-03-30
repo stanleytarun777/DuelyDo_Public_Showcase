@@ -138,8 +138,7 @@ Frontend Application
 | Backend | Python (FastAPI)|
 | AI | Anthropic Claude API|
 | Database | Supabase (PostgreSQL)|
-| Parsing | PDF.js, Mammoth.js |
-| Visualization | Chart.js |
+
 
 ---
 
