@@ -8,7 +8,7 @@ The full production system — including backend services and proprietary proces
 
 
 <p align="center">
-  <img src="DuelyDo_Banner.png" alt="DuelyDo Banner" width="800">
+  <img src="Images/DuelyDo_Banner.png" alt="DuelyDo Banner" width="800">
 </p>
 
 
@@ -146,7 +146,7 @@ Frontend Application
 
 | Dashboard | Calendar | Analytics |
 |----------|----------|-----------|
-| ![Dashboard](Dashboard.png) | ![Calendar](Calendar.png) | ![Stats](Analytics.png) |
+| ![Dashboard](Images/Dashboard.png) | ![Calendar](Images/Calendar.png) | ![Stats](Images/Analytics.png) |
 
 ---
 
