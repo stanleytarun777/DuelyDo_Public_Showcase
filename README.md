@@ -55,12 +55,6 @@ Engineered a robust ingestion layer that supports:
 
 ---
 
-## Roadmap
-* [ ] **LMS Integration:** OAuth-based sync with Canvas, Blackboard, and Moodle.
-* [ ] **Mobile Ecosystem:** Dedicated iOS/Android applications using React Native.
-* [ ] **Calendar Orchestration:** Bidirectional sync with Google and Apple Calendars.
-
----
 
 ## Repository Notice
 This public showcase represents the system design and frontend architecture. Core proprietary processing logic and deployment configurations are maintained in a private repository for security and scalability.
