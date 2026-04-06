@@ -4,15 +4,15 @@
 
 [![DuelyDo Banner](https://github.com/stanleytarun777/DuelyDo_Public_Showcase/blob/main/Images/DuelyDo_Banner.png)](https://github.com/stanleytarun777/DuelyDo_Public_Showcase)
 
-## 🚀 The Engineering Mission
+##  The Engineering Mission
 Academic workflows are historically fragmented; deadlines are buried in 10-page PDFs, and expectations are distributed across static documents. **DuelyDo** solves this "information-to-action" gap by implementing an automated extraction pipeline that identifies, structures, and sequences academic tasks with high precision.
 
 ---
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 DuelyDo is built on a modular stack designed for low-latency processing and reliable data persistence:
 
-* **Frontend:** React.js & Tailwind CSS (Cinematic UI/UX with asynchronous state management).
+* **Frontend:** React.js & CSS (Cinematic UI/UX with asynchronous state management).
 * **Backend:** FastAPI (Python) for high-concurrency API handling and document processing.
 * **AI Layer:** Anthropic Claude API integrated via a custom prompt-engineering pipeline for structured JSON task extraction.
 * **Database & Auth:** Supabase (PostgreSQL) for real-time data synchronization and secure user session management.
@@ -20,7 +20,7 @@ DuelyDo is built on a modular stack designed for low-latency processing and reli
 
 ---
 
-## ✨ Core Engineering Capabilities
+## Core Engineering Capabilities
 
 ### 1. Intelligent Schema Mapping
 Unlike standard OCR, DuelyDo normalizes inconsistent academic formats into a strict **PostgreSQL schema**. It handles:
@@ -38,14 +38,14 @@ Engineered a robust ingestion layer that supports:
 
 ---
 
-## 📈 Performance & Impact (XYZ Method)
+## Performance & Impact (XYZ Method)
 * **Workflow Optimization:** Reduced manual task entry time by **~90%** by automating the extraction of dozens of assignments per document.
 * **Latency Reduction:** Optimized the Python backend pipeline to achieve **near real-time processing** of multi-page syllabi.
 * **Data Integrity:** Implemented a verification layer that significantly reduced extraction hallucinations in complex academic tables.
 
 ---
 
-## 🧠 Engineering Challenges & Solutions
+## Engineering Challenges & Solutions
 * **Challenge:** Managing UI responsiveness during heavy AI processing.
     * **Solution:** Implemented asynchronous polling and optimistic UI updates to maintain a seamless user experience.
 * **Challenge:** Interpreting inconsistent date expressions.
@@ -55,14 +55,14 @@ Engineered a robust ingestion layer that supports:
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 * [ ] **LMS Integration:** OAuth-based sync with Canvas, Blackboard, and Moodle.
 * [ ] **Mobile Ecosystem:** Dedicated iOS/Android applications using React Native.
 * [ ] **Calendar Orchestration:** Bidirectional sync with Google and Apple Calendars.
 
 ---
 
-## 🔒 Repository Notice
+## Repository Notice
 This public showcase represents the system design and frontend architecture. Core proprietary processing logic and deployment configurations are maintained in a private repository for security and scalability.
 
 ---
