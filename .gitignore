@@ -2,16 +2,17 @@
 node_modules/
 
 # Build output
-frontend/dist/
+Frontend/dist/
 
-# Environment variables
-frontend/.env
-backend/.env
+# Environment variables (never commit real .env files)
+Frontend/.env
+Backend/.env
+Backend/App/.env
 
 # Python
-backend/__pycache__/
-backend/.pytest_cache/
-backend/.venv/
+Backend/__pycache__/
+Backend/.pytest_cache/
+Backend/.venv/
 *.pyc
 
 # OS

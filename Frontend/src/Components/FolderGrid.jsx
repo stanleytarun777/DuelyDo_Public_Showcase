@@ -1,4 +1,4 @@
-import { dueDisplay } from '../utils/taskHelpers';
+import { dueDisplay } from '../Utils/TaskHelpers';
 
 export default function FolderGrid({ folders, tasks, onRemoveFolder, onFocusFolder }) {
   return (
