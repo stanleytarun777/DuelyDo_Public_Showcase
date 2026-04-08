@@ -1,7 +1,17 @@
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
-export const TASKS_KEY = 'studysync.react.tasks.v1';
-export const FOLDERS_KEY = 'studysync.react.folders.v1';
+/**
+ * TaskHelpers.js — Shared utilities and constants
+ *
+ * Full implementations maintained in the private repository.
+ */
 
+/** Base URL for the Python backend API. Configurable via VITE_API_BASE_URL. */
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+
+/** LocalStorage keys for client-side persistence. */
+export const TASKS_KEY = 'duelydo.tasks.v1';
+export const FOLDERS_KEY = 'duelydo.folders.v1';
+
+/** Default shape for a new manually entered task. */
 export const emptyManualTask = {
   title: '',
   subject: '',
@@ -11,51 +21,38 @@ export const emptyManualTask = {
   description: ''
 };
 
-export function isOverdue(dateString) {
-  if (!dateString) return false;
-  const due = new Date(dateString);
-  due.setHours(23, 59, 59, 999);
-  return due < new Date();
-}
+/**
+ * Normalizes a raw task object into a consistent shape.
+ * Fills missing fields with defaults and resolves overdue status.
+ *
+ * @param {object} task - Raw task data from API or localStorage
+ * @param {number} index - Used to generate a unique fallback ID
+ * @returns {object} Normalized task
+ */
+export function normalizeTask(_task, _index = 0) { /* private */ }
 
-export function dueDisplay(dateString) {
-  if (!dateString) return 'No due date';
-  const now = new Date();
-  now.setHours(0, 0, 0, 0);
-  const due = new Date(dateString);
-  due.setHours(0, 0, 0, 0);
-  const diff = Math.round((due - now) / 86400000);
-  if (diff < 0) return `${Math.abs(diff)}d overdue`;
-  if (diff === 0) return 'Due today';
-  if (diff === 1) return 'Due tomorrow';
-  if (diff <= 7) return `Due in ${diff}d`;
-  return due.toLocaleDateString();
-}
+/**
+ * Normalizes a raw folder object. Returns null for invalid (empty course) entries.
+ *
+ * @param {object} folder - Raw folder data
+ * @param {number} index - Used to generate a unique fallback ID
+ * @returns {object|null} Normalized folder or null
+ */
+export function normalizeFolder(_folder, _index = 0) { /* private */ }
 
-export function normalizeTask(task, index = 0) {
-  const status = task.status === 'done' ? 'done' : task.status === 'inprogress' ? 'inprogress' : 'todo';
-  return {
-    id: task.id || `task-${Date.now()}-${index}`,
-    title: task.title || 'Untitled task',
-    subject: task.subject || 'General',
-    dueDate: task.dueDate || '',
-    priority: task.priority || 'medium',
-    type: task.type || 'other',
-    description: task.description || '',
-    estimatedHours: task.estimatedHours ?? 1,
-    points: task.points ?? null,
-    status: status === 'done' ? 'done' : isOverdue(task.dueDate) ? 'overdue' : status
-  };
-}
+/**
+ * Returns true if a task's due date has passed end-of-day.
+ *
+ * @param {string} dateString - ISO date string (YYYY-MM-DD)
+ * @returns {boolean}
+ */
+export function isOverdue(_dateString) { /* private */ }
 
-export function normalizeFolder(folder, index = 0) {
-  const course = String(folder.course || '').trim();
-  if (!course) return null;
-  return {
-    id: folder.id || `folder-${Date.now()}-${index}`,
-    course,
-    name: folder.name?.trim() || `${course} Folder`,
-    note: folder.note?.trim() || '',
-    createdAt: folder.createdAt || new Date().toISOString()
-  };
-}
+/**
+ * Converts an ISO date string into a human-readable label.
+ * Examples: "Due today", "Due in 3d", "2d overdue", "Apr 20, 2025"
+ *
+ * @param {string} dateString - ISO date string (YYYY-MM-DD)
+ * @returns {string}
+ */
+export function dueDisplay(_dateString) { /* private */ }
