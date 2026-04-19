@@ -1,5 +1,6 @@
 # DuelyDo — AI-Powered Academic Task Manager
 Get your full Semester organized in under 60 seconds. 
+### [🚀 Live Demo](https://duelydo-p93h7wj2z-stanleys-projects-4078d62d.vercel.app/) | [Video Walkthrough](URL_HERE)
 
 [![DuelyDo Banner](Images/DuelyDo_Banner.png)](https://github.com/stanleytarun777/DuelyDo_Public_Showcase)
 
